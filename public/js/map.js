@@ -178,9 +178,7 @@ $('#submit__lost').on('click', () => {
     $("#lostName").val('');
     $("#lostItem").val('');
     $("#lostDescription").val('');
-    $("#lostLat").val('');
-    $("#lostLong").val('');
-    $("#lostLong").val('');
+    $("#lostAutocomplete").val('');
     $("#reward").val(''); 
     
     // Closes the Lost modal
@@ -276,8 +274,34 @@ console.log(input);
 autocomplete.addListener('place_changed', fillInAddress);
 function fillInAddress(){
     var  place = autocomplete.getPlace();
+    
+      }
 
-}
+
+var lostAu = $('#autocomplete');
+lostAu.on('focus', function () {
+  var pacC = $('.pac-container');
+  $(lostAu.parent()).append(pacC);
+})
+
+//-----AUTOCOMPLETE FOR FIND MODAL
+
+var input = document.getElementById("findAutoComplete");
+var findAutoComplete = new google.maps.places.Autocomplete(input, {types: ['geocode']});
+console.log("I'm here");
+console.log(input); 
+findAutoComplete.addListener('place_changed', fillInAddress);
+function fillInAddress(){
+    var  place = findAutoComplete.getPlace();
+    
+      }
+
+
+var addressInputElement = $('#findAutoComplete');
+addressInputElement.on('focus', function () {
+  var pacContainer = $('.pac-container');
+  $(addressInputElement.parent()).append(pacContainer);
+})
 
 }
 //PAGE LOADER ANIMATION//

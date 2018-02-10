@@ -261,6 +261,14 @@ input[type=text] {
     animation: pulse 1.5s infinite ease-in;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }  
+.pac-container {
+  position: fixed !important;
+  right: 0 !important;
+  display: block !important;
+}
+
+.pac-container:empty{
+  display: none !important;
 }
 
 .preload * {
