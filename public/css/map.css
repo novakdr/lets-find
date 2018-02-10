@@ -69,12 +69,9 @@ nav > .links {
 }
 
 #dvMap {
-  width: 100%;
-  height: 650px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
+  width: 100%; 
+  height: 100%; 
+  clip-path: polygon(-490% 0, 100% 0, 100% 90%, 50% 100%);"
 }
 
 .button__section {
@@ -414,8 +411,12 @@ input[type=text] {
   }
   
   #dvMap {
-    width: 100vw;
-    clip-path: none;
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
   }
 
   .button__section {
