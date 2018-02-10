@@ -1,0 +1,1244 @@
+/* VARIABLES */
+:root {
+  --dark-teal: #549D90;
+  --light-teal: #74B9AC;
+  --medium-teal: #5aaa9c;
+  --grey: #4F4C4C;
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background: var(--grey);
+}
+
+.body__wrapper {
+  display: grid;
+}
+
+.masthead {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: var(--dark-teal);
+  background-image: radial-gradient(#afeeee,#549D90 );
+  height: 600px;
+  clip-path: polygon(-490% 0, 100% 0, 100% 90%, 50% 100%);
+
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: var(--grey);
+}
+
+nav > .logo__small {
+  display: grid;
+  padding:5px 0 5px 50px;
+}
+
+.logo__small > img {
+  height: auto;
+  width: 120px;
+}
+
+nav > .links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links > a {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding-right: 60px;
+}
+
+.links > a:hover {
+  color: coral;
+}
+
+.mobile__junk {
+  display: none;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center center;
+  z-index: 1;
+}
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+.heading {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding-left: 50px;
+  font-size: 40px;
+  grid-gap: 30px;
+  margin-top: 50px;
+}
+
+/*.globe {
+  margin-right:70px;
+  margin-top:10px;
+}*/
+
+a > .button {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.button:hover {
+  cursor: pointer;
+  top: 0px;
+  left: 0px;
+  box-shadow: none;
+}
+
+.cont, .cont > button, svg {
+  height: 84px;
+  width: 298px;
+}
+
+svg{
+  
+  top:0px;
+  right:0px;
+}
+
+.cont {
+  top: 50vh;
+  left: 50vw;
+  margin: -20px 0 0 -60px;
+}
+.cont button {
+  margin-left:30px;
+  margin-top:60px;
+  border: 2px solid black;
+  background-color: transparent;
+  z-index: 2;
+  position: absolute;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Arial Rounded MT Bold';
+  font-size: 40px;
+  box-shadow: 5px 5px 0 rgba(60, 60, 60, 0.2), 4px 4px 0 rgba(60, 60, 60, 0.2);
+  color: white;
+  transition: all 0.3s;
+
+}
+.cont button:hover {
+  transform: scale(1.2);
+  color: coral;
+}
+.cont button:hover ~ svg > line:nth-child(odd) {
+  transform: scaleY(1.2);
+  opacity: 0.2;
+}
+.cont button:hover ~ svg > line:nth-child(even) {
+  transform: scaleY(-0.2) translateX(-1px);
+  opacity: 0.2;
+}
+
+svg {
+  overflow: visible;
+  margin-top:60px;
+  margin-left:29px;
+}
+svg line {
+  stroke: coral;
+  stroke-width: 1px;
+  transition: all 0.3s;
+  transform-origin: 50% 0%;
+}
+svg line:nth-child(1) {
+  transition-delay: 0.0010067114s;
+}
+svg line:nth-child(2) {
+  transition-delay: 0.0020134228s;
+}
+svg line:nth-child(3) {
+  transition-delay: 0.0030201342s;
+}
+svg line:nth-child(4) {
+  transition-delay: 0.0040268456s;
+}
+svg line:nth-child(5) {
+  transition-delay: 0.005033557s;
+}
+svg line:nth-child(6) {
+  transition-delay: 0.0060402685s;
+}
+svg line:nth-child(7) {
+  transition-delay: 0.0070469799s;
+}
+svg line:nth-child(8) {
+  transition-delay: 0.0080536913s;
+}
+svg line:nth-child(9) {
+  transition-delay: 0.0090604027s;
+}
+svg line:nth-child(10) {
+  transition-delay: 0.0100671141s;
+}
+svg line:nth-child(11) {
+  transition-delay: 0.0110738255s;
+}
+svg line:nth-child(12) {
+  transition-delay: 0.0120805369s;
+}
+svg line:nth-child(13) {
+  transition-delay: 0.0130872483s;
+}
+svg line:nth-child(14) {
+  transition-delay: 0.0140939597s;
+}
+svg line:nth-child(15) {
+  transition-delay: 0.0151006711s;
+}
+svg line:nth-child(16) {
+  transition-delay: 0.0161073826s;
+}
+svg line:nth-child(17) {
+  transition-delay: 0.017114094s;
+}
+svg line:nth-child(18) {
+  transition-delay: 0.0181208054s;
+}
+svg line:nth-child(19) {
+  transition-delay: 0.0191275168s;
+}
+svg line:nth-child(20) {
+  transition-delay: 0.0201342282s;
+}
+svg line:nth-child(21) {
+  transition-delay: 0.0211409396s;
+}
+svg line:nth-child(22) {
+  transition-delay: 0.022147651s;
+}
+svg line:nth-child(23) {
+  transition-delay: 0.0231543624s;
+}
+svg line:nth-child(24) {
+  transition-delay: 0.0241610738s;
+}
+svg line:nth-child(25) {
+  transition-delay: 0.0251677852s;
+}
+svg line:nth-child(26) {
+  transition-delay: 0.0261744966s;
+}
+svg line:nth-child(27) {
+  transition-delay: 0.0271812081s;
+}
+svg line:nth-child(28) {
+  transition-delay: 0.0281879195s;
+}
+svg line:nth-child(29) {
+  transition-delay: 0.0291946309s;
+}
+svg line:nth-child(30) {
+  transition-delay: 0.0302013423s;
+}
+svg line:nth-child(31) {
+  transition-delay: 0.0312080537s;
+}
+svg line:nth-child(32) {
+  transition-delay: 0.0322147651s;
+}
+svg line:nth-child(33) {
+  transition-delay: 0.0332214765s;
+}
+svg line:nth-child(34) {
+  transition-delay: 0.0342281879s;
+}
+svg line:nth-child(35) {
+  transition-delay: 0.0352348993s;
+}
+svg line:nth-child(36) {
+  transition-delay: 0.0362416107s;
+}
+svg line:nth-child(37) {
+  transition-delay: 0.0372483221s;
+}
+svg line:nth-child(38) {
+  transition-delay: 0.0382550336s;
+}
+svg line:nth-child(39) {
+  transition-delay: 0.039261745s;
+}
+svg line:nth-child(40) {
+  transition-delay: 0.0402684564s;
+}
+svg line:nth-child(41) {
+  transition-delay: 0.0412751678s;
+}
+svg line:nth-child(42) {
+  transition-delay: 0.0422818792s;
+}
+svg line:nth-child(43) {
+  transition-delay: 0.0432885906s;
+}
+svg line:nth-child(44) {
+  transition-delay: 0.044295302s;
+}
+svg line:nth-child(45) {
+  transition-delay: 0.0453020134s;
+}
+svg line:nth-child(46) {
+  transition-delay: 0.0463087248s;
+}
+svg line:nth-child(47) {
+  transition-delay: 0.0473154362s;
+}
+svg line:nth-child(48) {
+  transition-delay: 0.0483221477s;
+}
+svg line:nth-child(49) {
+  transition-delay: 0.0493288591s;
+}
+svg line:nth-child(50) {
+  transition-delay: 0.0503355705s;
+}
+svg line:nth-child(51) {
+  transition-delay: 0.0513422819s;
+}
+svg line:nth-child(52) {
+  transition-delay: 0.0523489933s;
+}
+svg line:nth-child(53) {
+  transition-delay: 0.0533557047s;
+}
+svg line:nth-child(54) {
+  transition-delay: 0.0543624161s;
+}
+svg line:nth-child(55) {
+  transition-delay: 0.0553691275s;
+}
+svg line:nth-child(56) {
+  transition-delay: 0.0563758389s;
+}
+svg line:nth-child(57) {
+  transition-delay: 0.0573825503s;
+}
+svg line:nth-child(58) {
+  transition-delay: 0.0583892617s;
+}
+svg line:nth-child(59) {
+  transition-delay: 0.0593959732s;
+}
+svg line:nth-child(60) {
+  transition-delay: 0.0604026846s;
+}
+svg line:nth-child(61) {
+  transition-delay: 0.061409396s;
+}
+svg line:nth-child(62) {
+  transition-delay: 0.0624161074s;
+}
+svg line:nth-child(63) {
+  transition-delay: 0.0634228188s;
+}
+svg line:nth-child(64) {
+  transition-delay: 0.0644295302s;
+}
+svg line:nth-child(65) {
+  transition-delay: 0.0654362416s;
+}
+svg line:nth-child(66) {
+  transition-delay: 0.066442953s;
+}
+svg line:nth-child(67) {
+  transition-delay: 0.0674496644s;
+}
+svg line:nth-child(68) {
+  transition-delay: 0.0684563758s;
+}
+svg line:nth-child(69) {
+  transition-delay: 0.0694630872s;
+}
+svg line:nth-child(70) {
+  transition-delay: 0.0704697987s;
+}
+svg line:nth-child(71) {
+  transition-delay: 0.0714765101s;
+}
+svg line:nth-child(72) {
+  transition-delay: 0.0724832215s;
+}
+svg line:nth-child(73) {
+  transition-delay: 0.0734899329s;
+}
+svg line:nth-child(74) {
+  transition-delay: 0.0744966443s;
+}
+svg line:nth-child(75) {
+  transition-delay: 0.0755033557s;
+}
+svg line:nth-child(76) {
+  transition-delay: 0.0765100671s;
+}
+svg line:nth-child(77) {
+  transition-delay: 0.0775167785s;
+}
+svg line:nth-child(78) {
+  transition-delay: 0.0785234899s;
+}
+svg line:nth-child(79) {
+  transition-delay: 0.0795302013s;
+}
+svg line:nth-child(80) {
+  transition-delay: 0.0805369128s;
+}
+svg line:nth-child(81) {
+  transition-delay: 0.0815436242s;
+}
+svg line:nth-child(82) {
+  transition-delay: 0.0825503356s;
+}
+svg line:nth-child(83) {
+  transition-delay: 0.083557047s;
+}
+svg line:nth-child(84) {
+  transition-delay: 0.0845637584s;
+}
+svg line:nth-child(85) {
+  transition-delay: 0.0855704698s;
+}
+svg line:nth-child(86) {
+  transition-delay: 0.0865771812s;
+}
+svg line:nth-child(87) {
+  transition-delay: 0.0875838926s;
+}
+svg line:nth-child(88) {
+  transition-delay: 0.088590604s;
+}
+svg line:nth-child(89) {
+  transition-delay: 0.0895973154s;
+}
+svg line:nth-child(90) {
+  transition-delay: 0.0906040268s;
+}
+svg line:nth-child(91) {
+  transition-delay: 0.0916107383s;
+}
+svg line:nth-child(92) {
+  transition-delay: 0.0926174497s;
+}
+svg line:nth-child(93) {
+  transition-delay: 0.0936241611s;
+}
+svg line:nth-child(94) {
+  transition-delay: 0.0946308725s;
+}
+svg line:nth-child(95) {
+  transition-delay: 0.0956375839s;
+}
+svg line:nth-child(96) {
+  transition-delay: 0.0966442953s;
+}
+svg line:nth-child(97) {
+  transition-delay: 0.0976510067s;
+}
+svg line:nth-child(98) {
+  transition-delay: 0.0986577181s;
+}
+svg line:nth-child(99) {
+  transition-delay: 0.0996644295s;
+}
+svg line:nth-child(100) {
+  transition-delay: 0.1006711409s;
+}
+svg line:nth-child(101) {
+  transition-delay: 0.1016778523s;
+}
+svg line:nth-child(102) {
+  transition-delay: 0.1026845638s;
+}
+svg line:nth-child(103) {
+  transition-delay: 0.1036912752s;
+}
+svg line:nth-child(104) {
+  transition-delay: 0.1046979866s;
+}
+svg line:nth-child(105) {
+  transition-delay: 0.105704698s;
+}
+svg line:nth-child(106) {
+  transition-delay: 0.1067114094s;
+}
+svg line:nth-child(107) {
+  transition-delay: 0.1077181208s;
+}
+svg line:nth-child(108) {
+  transition-delay: 0.1087248322s;
+}
+svg line:nth-child(109) {
+  transition-delay: 0.1097315436s;
+}
+svg line:nth-child(110) {
+  transition-delay: 0.110738255s;
+}
+svg line:nth-child(111) {
+  transition-delay: 0.1117449664s;
+}
+svg line:nth-child(112) {
+  transition-delay: 0.1127516779s;
+}
+svg line:nth-child(113) {
+  transition-delay: 0.1137583893s;
+}
+svg line:nth-child(114) {
+  transition-delay: 0.1147651007s;
+}
+svg line:nth-child(115) {
+  transition-delay: 0.1157718121s;
+}
+svg line:nth-child(116) {
+  transition-delay: 0.1167785235s;
+}
+svg line:nth-child(117) {
+  transition-delay: 0.1177852349s;
+}
+svg line:nth-child(118) {
+  transition-delay: 0.1187919463s;
+}
+svg line:nth-child(119) {
+  transition-delay: 0.1197986577s;
+}
+svg line:nth-child(120) {
+  transition-delay: 0.1208053691s;
+}
+svg line:nth-child(121) {
+  transition-delay: 0.1218120805s;
+}
+svg line:nth-child(122) {
+  transition-delay: 0.1228187919s;
+}
+svg line:nth-child(123) {
+  transition-delay: 0.1238255034s;
+}
+svg line:nth-child(124) {
+  transition-delay: 0.1248322148s;
+}
+svg line:nth-child(125) {
+  transition-delay: 0.1258389262s;
+}
+svg line:nth-child(126) {
+  transition-delay: 0.1268456376s;
+}
+svg line:nth-child(127) {
+  transition-delay: 0.127852349s;
+}
+svg line:nth-child(128) {
+  transition-delay: 0.1288590604s;
+}
+svg line:nth-child(129) {
+  transition-delay: 0.1298657718s;
+}
+svg line:nth-child(130) {
+  transition-delay: 0.1308724832s;
+}
+svg line:nth-child(131) {
+  transition-delay: 0.1318791946s;
+}
+svg line:nth-child(132) {
+  transition-delay: 0.132885906s;
+}
+svg line:nth-child(133) {
+  transition-delay: 0.1338926174s;
+}
+svg line:nth-child(134) {
+  transition-delay: 0.1348993289s;
+}
+svg line:nth-child(135) {
+  transition-delay: 0.1359060403s;
+}
+svg line:nth-child(136) {
+  transition-delay: 0.1369127517s;
+}
+svg line:nth-child(137) {
+  transition-delay: 0.1379194631s;
+}
+svg line:nth-child(138) {
+  transition-delay: 0.1389261745s;
+}
+svg line:nth-child(139) {
+  transition-delay: 0.1399328859s;
+}
+svg line:nth-child(140) {
+  transition-delay: 0.1409395973s;
+}
+svg line:nth-child(141) {
+  transition-delay: 0.1419463087s;
+}
+svg line:nth-child(142) {
+  transition-delay: 0.1429530201s;
+}
+svg line:nth-child(143) {
+  transition-delay: 0.1439597315s;
+}
+svg line:nth-child(144) {
+  transition-delay: 0.144966443s;
+}
+svg line:nth-child(145) {
+  transition-delay: 0.1459731544s;
+}
+svg line:nth-child(146) {
+  transition-delay: 0.1469798658s;
+}
+svg line:nth-child(147) {
+  transition-delay: 0.1479865772s;
+}
+svg line:nth-child(148) {
+  transition-delay: 0.1489932886s;
+}
+svg line:nth-child(149) {
+  transition-delay: 0.15s;
+}
+svg line:nth-child(150) {
+  transition-delay: 0.1510067114s;
+}
+svg line:nth-child(151) {
+  transition-delay: 0.1520134228s;
+}
+svg line:nth-child(152) {
+  transition-delay: 0.1530201342s;
+}
+svg line:nth-child(153) {
+  transition-delay: 0.1540268456s;
+}
+svg line:nth-child(154) {
+  transition-delay: 0.155033557s;
+}
+svg line:nth-child(155) {
+  transition-delay: 0.1560402685s;
+}
+svg line:nth-child(156) {
+  transition-delay: 0.1570469799s;
+}
+svg line:nth-child(157) {
+  transition-delay: 0.1580536913s;
+}
+svg line:nth-child(158) {
+  transition-delay: 0.1590604027s;
+}
+svg line:nth-child(159) {
+  transition-delay: 0.1600671141s;
+}
+svg line:nth-child(160) {
+  transition-delay: 0.1610738255s;
+}
+svg line:nth-child(161) {
+  transition-delay: 0.1620805369s;
+}
+svg line:nth-child(162) {
+  transition-delay: 0.1630872483s;
+}
+svg line:nth-child(163) {
+  transition-delay: 0.1640939597s;
+}
+svg line:nth-child(164) {
+  transition-delay: 0.1651006711s;
+}
+svg line:nth-child(165) {
+  transition-delay: 0.1661073826s;
+}
+svg line:nth-child(166) {
+  transition-delay: 0.167114094s;
+}
+svg line:nth-child(167) {
+  transition-delay: 0.1681208054s;
+}
+svg line:nth-child(168) {
+  transition-delay: 0.1691275168s;
+}
+svg line:nth-child(169) {
+  transition-delay: 0.1701342282s;
+}
+svg line:nth-child(170) {
+  transition-delay: 0.1711409396s;
+}
+svg line:nth-child(171) {
+  transition-delay: 0.172147651s;
+}
+svg line:nth-child(172) {
+  transition-delay: 0.1731543624s;
+}
+svg line:nth-child(173) {
+  transition-delay: 0.1741610738s;
+}
+svg line:nth-child(174) {
+  transition-delay: 0.1751677852s;
+}
+svg line:nth-child(175) {
+  transition-delay: 0.1761744966s;
+}
+svg line:nth-child(176) {
+  transition-delay: 0.1771812081s;
+}
+svg line:nth-child(177) {
+  transition-delay: 0.1781879195s;
+}
+svg line:nth-child(178) {
+  transition-delay: 0.1791946309s;
+}
+svg line:nth-child(179) {
+  transition-delay: 0.1802013423s;
+}
+svg line:nth-child(180) {
+  transition-delay: 0.1812080537s;
+}
+svg line:nth-child(181) {
+  transition-delay: 0.1822147651s;
+}
+svg line:nth-child(182) {
+  transition-delay: 0.1832214765s;
+}
+svg line:nth-child(183) {
+  transition-delay: 0.1842281879s;
+}
+svg line:nth-child(184) {
+  transition-delay: 0.1852348993s;
+}
+svg line:nth-child(185) {
+  transition-delay: 0.1862416107s;
+}
+svg line:nth-child(186) {
+  transition-delay: 0.1872483221s;
+}
+svg line:nth-child(187) {
+  transition-delay: 0.1882550336s;
+}
+svg line:nth-child(188) {
+  transition-delay: 0.189261745s;
+}
+svg line:nth-child(189) {
+  transition-delay: 0.1902684564s;
+}
+svg line:nth-child(190) {
+  transition-delay: 0.1912751678s;
+}
+svg line:nth-child(191) {
+  transition-delay: 0.1922818792s;
+}
+svg line:nth-child(192) {
+  transition-delay: 0.1932885906s;
+}
+svg line:nth-child(193) {
+  transition-delay: 0.194295302s;
+}
+svg line:nth-child(194) {
+  transition-delay: 0.1953020134s;
+}
+svg line:nth-child(195) {
+  transition-delay: 0.1963087248s;
+}
+svg line:nth-child(196) {
+  transition-delay: 0.1973154362s;
+}
+svg line:nth-child(197) {
+  transition-delay: 0.1983221477s;
+}
+svg line:nth-child(198) {
+  transition-delay: 0.1993288591s;
+}
+svg line:nth-child(199) {
+  transition-delay: 0.2003355705s;
+}
+svg line:nth-child(200) {
+  transition-delay: 0.2013422819s;
+}
+svg line:nth-child(201) {
+  transition-delay: 0.2023489933s;
+}
+svg line:nth-child(202) {
+  transition-delay: 0.2033557047s;
+}
+svg line:nth-child(203) {
+  transition-delay: 0.2043624161s;
+}
+svg line:nth-child(204) {
+  transition-delay: 0.2053691275s;
+}
+svg line:nth-child(205) {
+  transition-delay: 0.2063758389s;
+}
+svg line:nth-child(206) {
+  transition-delay: 0.2073825503s;
+}
+svg line:nth-child(207) {
+  transition-delay: 0.2083892617s;
+}
+svg line:nth-child(208) {
+  transition-delay: 0.2093959732s;
+}
+svg line:nth-child(209) {
+  transition-delay: 0.2104026846s;
+}
+svg line:nth-child(210) {
+  transition-delay: 0.211409396s;
+}
+svg line:nth-child(211) {
+  transition-delay: 0.2124161074s;
+}
+svg line:nth-child(212) {
+  transition-delay: 0.2134228188s;
+}
+svg line:nth-child(213) {
+  transition-delay: 0.2144295302s;
+}
+svg line:nth-child(214) {
+  transition-delay: 0.2154362416s;
+}
+svg line:nth-child(215) {
+  transition-delay: 0.216442953s;
+}
+svg line:nth-child(216) {
+  transition-delay: 0.2174496644s;
+}
+svg line:nth-child(217) {
+  transition-delay: 0.2184563758s;
+}
+svg line:nth-child(218) {
+  transition-delay: 0.2194630872s;
+}
+svg line:nth-child(219) {
+  transition-delay: 0.2204697987s;
+}
+svg line:nth-child(220) {
+  transition-delay: 0.2214765101s;
+}
+svg line:nth-child(221) {
+  transition-delay: 0.2224832215s;
+}
+svg line:nth-child(222) {
+  transition-delay: 0.2234899329s;
+}
+svg line:nth-child(223) {
+  transition-delay: 0.2244966443s;
+}
+svg line:nth-child(224) {
+  transition-delay: 0.2255033557s;
+}
+svg line:nth-child(225) {
+  transition-delay: 0.2265100671s;
+}
+svg line:nth-child(226) {
+  transition-delay: 0.2275167785s;
+}
+svg line:nth-child(227) {
+  transition-delay: 0.2285234899s;
+}
+svg line:nth-child(228) {
+  transition-delay: 0.2295302013s;
+}
+svg line:nth-child(229) {
+  transition-delay: 0.2305369128s;
+}
+svg line:nth-child(230) {
+  transition-delay: 0.2315436242s;
+}
+svg line:nth-child(231) {
+  transition-delay: 0.2325503356s;
+}
+svg line:nth-child(232) {
+  transition-delay: 0.233557047s;
+}
+svg line:nth-child(233) {
+  transition-delay: 0.2345637584s;
+}
+svg line:nth-child(234) {
+  transition-delay: 0.2355704698s;
+}
+svg line:nth-child(235) {
+  transition-delay: 0.2365771812s;
+}
+svg line:nth-child(236) {
+  transition-delay: 0.2375838926s;
+}
+svg line:nth-child(237) {
+  transition-delay: 0.238590604s;
+}
+svg line:nth-child(238) {
+  transition-delay: 0.2395973154s;
+}
+svg line:nth-child(239) {
+  transition-delay: 0.2406040268s;
+}
+svg line:nth-child(240) {
+  transition-delay: 0.2416107383s;
+}
+svg line:nth-child(241) {
+  transition-delay: 0.2426174497s;
+}
+svg line:nth-child(242) {
+  transition-delay: 0.2436241611s;
+}
+svg line:nth-child(243) {
+  transition-delay: 0.2446308725s;
+}
+svg line:nth-child(244) {
+  transition-delay: 0.2456375839s;
+}
+svg line:nth-child(245) {
+  transition-delay: 0.2466442953s;
+}
+svg line:nth-child(246) {
+  transition-delay: 0.2476510067s;
+}
+svg line:nth-child(247) {
+  transition-delay: 0.2486577181s;
+}
+svg line:nth-child(248) {
+  transition-delay: 0.2496644295s;
+}
+svg line:nth-child(249) {
+  transition-delay: 0.2506711409s;
+}
+svg line:nth-child(250) {
+  transition-delay: 0.2516778523s;
+}
+svg line:nth-child(251) {
+  transition-delay: 0.2526845638s;
+}
+svg line:nth-child(252) {
+  transition-delay: 0.2536912752s;
+}
+svg line:nth-child(253) {
+  transition-delay: 0.2546979866s;
+}
+svg line:nth-child(254) {
+  transition-delay: 0.255704698s;
+}
+svg line:nth-child(255) {
+  transition-delay: 0.2567114094s;
+}
+svg line:nth-child(256) {
+  transition-delay: 0.2577181208s;
+}
+svg line:nth-child(257) {
+  transition-delay: 0.2587248322s;
+}
+svg line:nth-child(258) {
+  transition-delay: 0.2597315436s;
+}
+svg line:nth-child(259) {
+  transition-delay: 0.260738255s;
+}
+svg line:nth-child(260) {
+  transition-delay: 0.2617449664s;
+}
+svg line:nth-child(261) {
+  transition-delay: 0.2627516779s;
+}
+svg line:nth-child(262) {
+  transition-delay: 0.2637583893s;
+}
+svg line:nth-child(263) {
+  transition-delay: 0.2647651007s;
+}
+svg line:nth-child(264) {
+  transition-delay: 0.2657718121s;
+}
+svg line:nth-child(265) {
+  transition-delay: 0.2667785235s;
+}
+svg line:nth-child(266) {
+  transition-delay: 0.2677852349s;
+}
+svg line:nth-child(267) {
+  transition-delay: 0.2687919463s;
+}
+svg line:nth-child(268) {
+  transition-delay: 0.2697986577s;
+}
+svg line:nth-child(269) {
+  transition-delay: 0.2708053691s;
+}
+svg line:nth-child(270) {
+  transition-delay: 0.2718120805s;
+}
+svg line:nth-child(271) {
+  transition-delay: 0.2728187919s;
+}
+svg line:nth-child(272) {
+  transition-delay: 0.2738255034s;
+}
+svg line:nth-child(273) {
+  transition-delay: 0.2748322148s;
+}
+svg line:nth-child(274) {
+  transition-delay: 0.2758389262s;
+}
+svg line:nth-child(275) {
+  transition-delay: 0.2768456376s;
+}
+svg line:nth-child(276) {
+  transition-delay: 0.277852349s;
+}
+svg line:nth-child(277) {
+  transition-delay: 0.2788590604s;
+}
+svg line:nth-child(278) {
+  transition-delay: 0.2798657718s;
+}
+svg line:nth-child(279) {
+  transition-delay: 0.2808724832s;
+}
+svg line:nth-child(280) {
+  transition-delay: 0.2818791946s;
+}
+svg line:nth-child(281) {
+  transition-delay: 0.282885906s;
+}
+svg line:nth-child(282) {
+  transition-delay: 0.2838926174s;
+}
+svg line:nth-child(283) {
+  transition-delay: 0.2848993289s;
+}
+svg line:nth-child(284) {
+  transition-delay: 0.2859060403s;
+}
+svg line:nth-child(285) {
+  transition-delay: 0.2869127517s;
+}
+svg line:nth-child(286) {
+  transition-delay: 0.2879194631s;
+}
+svg line:nth-child(287) {
+  transition-delay: 0.2889261745s;
+}
+svg line:nth-child(288) {
+  transition-delay: 0.2899328859s;
+}
+svg line:nth-child(289) {
+  transition-delay: 0.2909395973s;
+}
+svg line:nth-child(290) {
+  transition-delay: 0.2919463087s;
+}
+svg line:nth-child(291) {
+  transition-delay: 0.2929530201s;
+}
+svg line:nth-child(292) {
+  transition-delay: 0.2939597315s;
+}
+svg line:nth-child(293) {
+  transition-delay: 0.294966443s;
+}
+svg line:nth-child(294) {
+  transition-delay: 0.2959731544s;
+}
+svg line:nth-child(295) {
+  transition-delay: 0.2969798658s;
+}
+svg line:nth-child(296) {
+  transition-delay: 0.2979865772s;
+}
+svg line:nth-child(297) {
+  transition-delay: 0.2989932886s;
+}
+svg line:nth-child(298) {
+  transition-delay: 0.3s;
+}
+svg:hover line:nth-child(odd) {
+  transform: scaleY(1.2);
+}
+svg:hover line:nth-child(even) {
+  transform: scaleY(-0.2);
+}
+
+.background {
+  position: relative;
+}
+
+.light {
+  height: 190px;
+  width: 100vw;
+  /* background: var(--light-teal); */
+  opacity: 0.7;
+  bottom: 400px;
+  z-index: -2;
+  display: repeat;
+}
+
+.medium {
+  height: 80px;
+  width: 100vw;
+  background: var(--medium-teal);
+  /* background: linear-gradient (var(--dark-teal), var(--medium-teal)); */
+  bottom: 130px;
+  z-index: -1;
+  
+}
+
+/* ABOUT SECTION */
+.about__section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 20px;
+  grid-gap: 30px;
+  /* font-family: 'Arial Rounded MT Bold'; */
+  font-size: 20px;
+}
+
+.about__section > .about__items {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  place-items: center center;
+  grid-gap: 30px;
+  text-align: center;
+  font-family: 'Arial Rounded MT Bold';
+}
+
+.about__items > img {
+  width: 100px;
+  height: 100px;
+}
+
+/* PHONE BREAKPOINT */
+@media screen and (max-width: 420px) {
+  nav > .logo__small {
+    padding: 5px 10px;
+  }
+
+  nav > .links {
+    display: none;
+  }
+
+  .mobile__junk {
+    display: block;
+  }
+  .mobile__junk > .menu {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    color: white;
+  }
+
+  .menu:hover {
+    color: coral;
+  }
+
+  .mobile__links {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 0;
+    place-items: center center;
+    z-index: 9999;
+  }
+
+  .mobile__links > .mobile__close {
+    color: var(--light-teal);
+    position: absolute;
+    top: -50px;
+    right: 15px;
+  }
+
+  .mobile__close:hover {
+    cursor: pointer;
+  }
+
+  .mobile__links > a {
+    display: grid;
+    text-decoration: none;
+    color: var(--light-teal);
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding: 50px 0;
+    text-transform: uppercase;
+  }
+
+  .left {
+    right: 0;
+  }
+  
+  .cta {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .heading {
+    font-size: 22px;
+    padding-left: 55px;
+  }
+
+  .heading > h2 {
+    padding: 0 50px 0 0;
+    
+   }
+ 
+  .cont > button {
+    padding: 0;
+    margin: 0;
+  }
+
+  .cont > svg {
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo__large > img {
+    width: 300px;
+    align-self: end;
+  }
+
+  .about__section {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+}
