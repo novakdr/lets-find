@@ -1156,6 +1156,7 @@ svg:hover line:nth-child(even) {
 
   .mobile__junk {
     display: block;
+    z-index: 99;
   }
   .mobile__junk > .menu {
     position: absolute;

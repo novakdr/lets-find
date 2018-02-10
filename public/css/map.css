@@ -362,6 +362,7 @@ input[type=text] {
 
   .mobile__junk {
     display: block;
+    z-index: 99;
   }
 
   .mobile__junk > .menu {
