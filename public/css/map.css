@@ -85,6 +85,7 @@ nav > .links {
 .button__section > a > img {
   width: 200px;
   height: 200px;
+  z-index: 0;
 }
 
 /*==============BUTTON__SECTION ANIMATE=================*/
