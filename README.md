@@ -1,3 +1,3 @@
-# Project-2
+# Let's Find
 
-Test
+A community driven lost and found app connecting people to their belongings.
